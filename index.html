@@ -446,6 +446,30 @@
     <!-- Meyawo js -->
     <script src="js/meyawo.js"></script>
 
+
+    <script>
+        $("#contact").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzBxnljxBYf5oDoTJr_Lj3zuVa4uB4seWF23Kwse1VlwgYopEybCut83manv_TrW4Le/exec",
+                data:$("#contact").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    // window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+
+
+
+
 </body>
 
 </html>
