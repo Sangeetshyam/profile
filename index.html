@@ -74,6 +74,10 @@
         <div class="container text-center">
             <!-- about wrapper -->
             <div class="about">
+                <div class="about-img-holder">
+                    <img src="imgs/self-removebg-preview (1).png" loading="lazy" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div> 
 
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
@@ -84,10 +88,7 @@
                     <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
                 </div>
 
-                <div class="about-img-holder">
-                    <img src="imgs/selfire-removebg-preview.png" loading="lazy" class="about-img"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div> 
+            
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
     </section> <!-- end of about section -->
@@ -181,21 +182,21 @@
                         </span>
                     </a>
                 </div>
-                <!-- <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded"
+                <div class="col-md-4">
+                    <a href="https://sangeetshyam.github.io/appy-fizz/" class="portfolio-card">
+                        <img class="portfolio-card-img" src="imgs/Screenshot (96).png" loading="lazy" class="img-responsive rounded"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Web Designing</h5>
-                                    <p class="font-weight-normal">Category: cloning</p>
+                                    <p class="font-weight-normal">Category: cloning responsive</p>
                             </span>
                         </span>
                     </a>
-                </div> -->
+                </div>
             </div><!-- end of row -->
         </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
+    </section> <!-- end of portfolio section
 
     <!-- pricing section -->
     <!-- <section class="section" id="pricing">
@@ -397,20 +398,20 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form method="post" action="https://script.google.com/macros/s/AKfycbxM5Jy46SGuHbNLxV-YgPdiDX-iavcnMSVGcuiCSY5kuedsGtl1gFqctrQldnCcOkPE/exec">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                        <input type="text" name="name" size="50" class="form-control" id="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" requried>
                     </div>
                     <div class="form-group col-sm-12">
                         <textarea name="comment" id="comment" rows="6" class="form-control"
                             placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                        <input type="submit" value="Send Message" id="Message" class="btn btn-outline-primary rounded">
                     </div>
                 </div>
             </form><!-- end of contact form -->
@@ -445,6 +446,29 @@
 
     <!-- Meyawo js -->
     <script src="js/meyawo.js"></script>
+    
+  
+    <!-- <script>
+        $("#contact").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxM5Jy46SGuHbNLxV-YgPdiDX-iavcnMSVGcuiCSY5kuedsGtl1gFqctrQldnCcOkPE/exec",
+                data:$("#contact").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    // window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script> -->
+
+
 
 </body>
 
